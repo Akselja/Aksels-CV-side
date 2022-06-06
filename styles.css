@@ -149,8 +149,7 @@ section {
         text-align: center;
     }
     .respProjectsPadding {
-        padding-left: 20%;
-        padding-right: 20%;
+        padding: 1rem 20%;
     }
 }
 
