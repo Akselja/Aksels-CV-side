@@ -25,40 +25,89 @@
 </head>
 
 <body>
+
+    <!--Things to do:-->
+    <!--xFinish skills section-->
+    <!--xCreate schools section-->
+    <!--Create footer-->
+    <!--Finish projects section-->
+    <!--Finish schools section-->
+    <!--Finish footer-->
+    <!--Move navigation into hamburger menu-->
+    <!--Make site responsive-->
+    <!--if you feel particularly suicidal, add screen reader compatibility-->
+
     <!--header-->
     <section class="row" id="Header">
         <h2 class="col-md-3" id="headerTitle">Aksels Nettside</h2>
         <div id="linkDiv" class="col-md-9 rightAlign">
-            <button type="button" class="btn btn-outline-light">Om meg</button>
-            <button type="button" class="btn btn-outline-light">Ferdigheter</button>
-            <button type="button" class="btn btn-outline-light">Prosjekter</button>
-            <button type="button" class="btn btn-outline-light">Skoler</button>
-            <button type="button" class="btn btn-outline-dark">Kontakt meg</button>
+            <a href="#aboutMe" class="btn btn-outline-light">Om meg</a>
+            <a href="#skillsSection" class="btn btn-outline-light">Ferdigheter</a>
+            <a href="#projectsSection" class="btn btn-outline-light">Prosjekter</a>
+            <a href="#schoolSection" class="btn btn-outline-light">Skoler</a>
+            <a href="" class="btn btn-dark">Kontakt meg</a>
         </div>
     </section>
     
     <!--about me-->
     <section id="aboutMe">
-        <div class="container row">
-            <div id="titleContainer" class="col-md-9">
-                <h1 id="mainTitle" class="normalTitle">Aksel Efraim Jacobsen</h1>
+        <div class="row">
+            <div class="container col-md-7">
+                <h1 id="mainTitle" class="normalTitle bigTitle">Aksel Efraim Jacobsen</h1>
                 <p class="normalText">Hei, jeg heter Aksel, og jeg går på Bleiker VGS.</p>
-                <p class="normalText">Jeg er veldig glad i programmering, og jeg har lært en god del av det det siste året, og litt før.</p>
-                <p class="normalText"></p>
+                <p class="normalText">Jeg er veldig glad i programmering, og jeg har lært en god del i det siste året, og litt før.</p>
+                <p class="normalText">En viktig ting om meg er at jeg har ADHD, så fokus kan bli litt dårlig noen ganger, men jeg prøver fortsatt mitt beste, og jeg har en genuin interesse i programmering.
+                </p>
             </div>
-            <div id="aboutImgContainer" class="col-md-3">
-                <img class="image" src="/img/Aksel CV-Image.jpg" alt="CV-Bilde">
+            <div id="aboutImgContainer" class="container col-lg-3">
+                <img class="mainImage" src="/img/Aksel CV-Image.jpg" alt="CV Bilde">
             </div>
         </div>
     </section>
 
     <!--skills section-->
-    <section class="sectionStyles" id="skillsSection">
-
+    <section id="skillsSection" class="darkSection sectionStyles">
+        <div class="row">
+            <div class="container col-md-3">
+                <img src="/img/Pc-png.png" alt="Ferdigheter Bilde" class="normalImage">
+            </div>
+            <div class="container col-md-5">
+                <h2 class="normalTitle bigTitle">Ferdigheter</h2>
+                <p class="normalText">Jeg kan har lært en god del av ting det siste året, og her skal jeg snakke litt om det.</p>
+                <p class="normalText">Jeg har vært interessert i programmering siden jeg begynte å spille videospill, fordi jeg har vært
+                    interessert i hvordan spillene virker teknisk, og det har ført videre til at jeg har blitt interessert i programmering
+                    generelt.
+                </p>
+                <p class="normalText">Mye jeg har lært fikk jeg fra Angela Yu sitt Udemy kurs, der har jeg lært mange ting blandt 
+                    annet: En god del HTML, CSS og JS, Git og Github, og hvordan man kan bruke dem sammen, kommandolinje, npm pakker 
+                    og servere ved bruk av express, hvordan API-er virker, og bittelitt grunnleggende om databaser.</p>
+            </div>
+        </div>
     </section>
 
     <!--projects section-->
-    <section class="sectionStyles" id="projectSection">
+    <section id="projectsSection" class="darkSection sectionStyles">
+        <div class="row">
+            <div class="container col-md-4">
+                <h2 class="normalTitle bigTitle">Prosjekter</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container col-md-4">
+                <h2 class="normalTitle">Drum Kit</h2>
+                <p class="normalText">Et online trommesett med et sett knapper du kan aktivere gjennom museklikk, eller tastaturklikk.</p>
+            </div>
+            <div class="container col-md-4">
+                <h2 class="normalTitle">Tindog</h2>
+                <p class="normalText">Tindog er en app hvor hunder kan møte andre hunder i stilen av Tinder, dette er nettsiden, og desverre er ikke appen funksjonell eller nedlastbar.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container col-md-4">
+                <h2 class="normalTitle">Simon Game</h2>
+                <p class="normalText">Simon Game er et spill der du skal memorisere rekkefølgen av knapper du må trykke, denne rekkefølgen gror mer og mer jo lenger du spiller.</p>
+            </div>
+        </div>
         <div class="row">
             <div class="container col-md-4">
                 <h2 class="normalTitle">Simon Game</h2>
@@ -69,18 +118,43 @@
                 <p class="normalText">Tindog er en app hvor hunder kan møte andre hunder i stilen av Tinder, dette er nettsiden, og desverre er ikke appen funksjonell eller nedlastbar.</p>
             </div>
         </div>
+    </section>
+
+    <!--schools section-->
+    <section id="schoolSection" class="sectionStyles">
+        <div class="container col-md-4">
+            <h2 class="normalTitle bigTitle">Skoler</h2>
+        </div>
         <div class="row">
-            <div class="container col-md-4">
-                <h2 class="normalTitle">Abcd</h2>
-                <p class="normalText"></p>
+            <div class="container col-md-3">
+                <h2 class="normalTitle schoolText">Blakstad Skole</h2>
+                <a target="_blank" href="https://www.asker.kommune.no/skole-og-utdanning/skoler-og-skoletilhorighet/skoleoversikt/blakstad-skole/">
+                    <img class="normalImage schoolImage" src="/img/Blakstad skole.jpg" alt="">
+                </a>
+            </div>
+            <div class="container col-md-3">
+                <h2 class="normalTitle schoolText">Hovedgården Ungdomsskole</h2>
+                <a target="_blank" href="https://www.asker.kommune.no/skole-og-utdanning/skoler-og-skoletilhorighet/skoleoversikt/hovedgarden-ungdomsskole/">
+                    <img class="normalImage schoolImage" src="/img/Hovedgården ungdomsskole.jpg" alt="">
+                </a>
+            </div>
+            <div class="container col-lg-3">
+                <h2 class="normalTitle schoolText">Bleiker Videregående</h2>
+                <a target="_blank" href="https://viken.no/bleiker-vgs/">
+                    <img class="normalImage schoolImage" src="/img/Bleiker VGS.jpg" alt="">
+                </a>
             </div>
         </div>
     </section>
 
-    <!--schools section-->
-
 
     <!--footer-->
+    <section id="footerSection">
+        <div class="container">
+            <p>Aksel Efraim Jacobsen</p>
+            <p>aksel4455@gmail.com</p>
+        </div>
+    </section>
 
 
     <!--javascript link-->

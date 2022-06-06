@@ -1,10 +1,23 @@
 /*General Styles*/
+html {
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
 body {
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
     background-color: #3AAFA9;
     padding: 0;
     margin: 0;
     font-family: 'Red Hat Mono', monospace;
     color: #DEF2F1;
+}
+
+section {
+    width: 100%;
 }
 
 .normalText {
@@ -17,7 +30,7 @@ body {
     font-size: 2.5rem;
 }
 
-.image {
+.mainImage {
     height: 20rem;
     width: auto;
     border-radius: 100%;
@@ -26,13 +39,50 @@ body {
     border-style: solid;
 }
 
+.normalImage {
+    height: 13rem;
+    width: auto;
+
+}
+
+.schoolImage {
+    border-color: #3AAFA9;
+    border-width: 6px;
+    border-style: solid;
+    margin: 1rem;
+}
+
 .rightAlign {
     text-align: right;
 }
 
 .sectionStyles {
-    padding: 3rem;
+    padding: 8rem 3rem;
     text-align: center;
+}
+
+.bigTitle {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.center {
+    margin: auto;
+}
+
+.darkSection {
+    background-color: #2B7A78;
+}
+
+
+/*Responsive Styles*/
+@media screen and (max-width:600px) {
+    .respHide {
+        display: none;
+    }
+    .respCenter {
+        text-align: center;
+    }
 }
 
 
@@ -65,35 +115,31 @@ body {
 
 /*About Section*/
 #aboutMe {
-    text-align: center;
+    padding: 12rem;
+    text-align: left;
 }   
 
-#titleContainer {
-    text-align: left;
-    padding: 14rem 8rem 0 8rem;
-}
 
 #mainTitle {
-    font-size: 3rem;
-    font-family: 'Azeret Mono', monospace;
-    font-weight: 400;
-}
-
-#aboutImgContainer {
-    text-align: center;
-    padding: 12rem 0;
+    line-height: 3.5rem;
 }
 
 
 /*Skills section*/
 #skillsSection {
-    background-color: #2B7A78;
+    background-color: #17252A;
 }
 
 
-/*Projects Section (no specific styles here)*/
+/*Projects Section*/
+
 
 /*Schools Section*/
 
 
 /*Footer Section*/
+#footerSection {
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: #17252A;
+}
