@@ -75,17 +75,6 @@ section {
 }
 
 
-/*Responsive Styles*/
-@media screen and (max-width:600px) {
-    .respHide {
-        display: none;
-    }
-    .respCenter {
-        text-align: center;
-    }
-}
-
-
 /*Header Section*/
 #Header {
     width: auto;
@@ -115,7 +104,7 @@ section {
 
 /*About Section*/
 #aboutMe {
-    padding: 12rem;
+    padding: 12rem 5%;
     text-align: left;
 }   
 
@@ -128,13 +117,16 @@ section {
 /*Skills section*/
 #skillsSection {
     background-color: #17252A;
-}
+}  
 
 
 /*Projects Section*/
 
 
 /*Schools Section*/
+#schoolSection {
+    padding: 8rem 5%;
+}
 
 
 /*Footer Section*/
@@ -142,4 +134,34 @@ section {
     text-align: center;
     padding: 1rem 2rem;
     background-color: #17252A;
+}
+
+
+/*Responsive Styles*/
+@media (max-width:960px) {
+    .smRespHide {
+        display: none;
+    }
+    .RespCenter {
+        text-align: center;
+    }
+    #aboutMe {
+        text-align: center;
+    }
+    .respProjectsPadding {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media (min-width:980px) {
+    .lgRespHide {
+        display: none;
+    }
+}
+
+@media (max-width:460px) {
+    .bigTitle {
+        font-size: 2.7rem;
+    }
 }
