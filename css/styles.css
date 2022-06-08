@@ -77,7 +77,6 @@ section {
 
 /*Header Section*/
 #Header {
-    width: auto;
     padding: 20px;
     margin: 0;
     background-color: #3AAFA9;
@@ -137,6 +136,12 @@ section {
 }
 
 
+/*Contact Section*/
+#contactMe {
+    padding: 9rem 20% 16rem;
+}
+
+
 /*Responsive Styles*/
 @media (max-width:960px) {
     .smRespHide {
@@ -144,13 +149,21 @@ section {
     }
     .RespCenter {
         text-align: center;
-    }
-    #aboutMe {
-        text-align: center;
+    }   
+    .mainImage {
+        height: 15rem;
+        margin-top: 3rem;
     }
     .respProjectsPadding {
         padding: 1rem 20%;
     }
+}
+
+@media (max-width:1220px) {
+    .navRespHide {
+        display: none;
+    }
+
 }
 
 @media (min-width:980px) {
@@ -162,5 +175,8 @@ section {
 @media (max-width:460px) {
     .bigTitle {
         font-size: 2.7rem;
+    }
+    #linkDiv {
+        padding-right: 0;
     }
 }
